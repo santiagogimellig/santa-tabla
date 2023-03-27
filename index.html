@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,12 +18,12 @@
 
 <body>
     <header>
-        <div class="header-contenedor">
+        <div class="header-grid">
             <div class="logo-contenedor">
                 <a href="./index.html"><img src="./assets/img/logo-santatabla.png" alt="Logo"></a>
                 <a href="./index.html"><h1>SANTA TABLA</h1></a>
             </div>
-            <nav>
+            <nav class="nav">
                 <ul class="barra-nav">
                     <li><a href="index.html">Inicio</a> </li>
                     <li><a href="./pages/lancha.html">Lancha</a></li>
@@ -35,19 +36,21 @@
     </header>
     
     <main>
-        <div class="main-contenedor">
+        <div class="main-grid">
             <section class="seccion-bienvenidos">
                 <h2>Bienvenidos Riders!</h2>
                 <a href="./index.html"><img src="./assets/img/index/inicio-bienvenidos-riders.png" alt="ImagenPrincipal"></a>
             </section>
             <section class="seccion-deportes">
-                <div>
-                    <h2>Wakeboard Lancha</h2>
-                    <a href="./pages/lancha.html"><img src="./assets/img/index/inicio-wakeboard-lancha.png" alt="ImagenLancha"></a>
-                </div>
-                <div>
-                    <h2>Wakeboard Park</h2>
-                    <a href="./pages/park.html"><img src="./assets/img/index/inicio-wakeboard-park.png" alt="ImagenPark"></a>
+                <div class="lancha-park-grid">
+                    <div class="w-lancha">
+                        <h2>Wakeboard Lancha</h2>
+                        <a href="./pages/lancha.html"><img src="./assets/img/index/inicio-wakeboard-lancha.png" alt="ImagenLancha"></a>
+                    </div>
+                    <div class="w-park">
+                        <h2>Wakeboard Park</h2>
+                        <a href="./pages/park.html"><img src="./assets/img/index/inicio-wakeboard-park.png" alt="ImagenPark"></a>
+                    </div>
                 </div>
             </section>
             <section class="seccion-tablas">
@@ -57,7 +60,7 @@
         </div>
     </main>
 
-    <footer>
+    <!-- <footer>
         <div class="footer-contenedor">
             <div class="columna1">
                 <div class="logo-contenedor">
@@ -99,6 +102,6 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>

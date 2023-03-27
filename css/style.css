@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+/* html{
+    font-size: 62.5%;
+} */
+
 /* FUENTES
 font-family: 'Poppins', sans-serif; 
 font-family: 'Golos Text', sans-serif;
@@ -58,22 +62,39 @@ footer{
 }
 
 /* HEADER*/
-.header-contenedor{
-    padding: 20px 20px 10px 20px;
+.header-grid{
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "logo-contenedor nav";
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 3rem 1rem 3rem;
+    /*padding: 20px 20px 10px 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;*/
 }
 
 .logo-contenedor{
     display: flex;
+    grid-area: logo-contenedor;
     align-items: center;
-    gap: 15px;
+    gap: 1.5rem;
+    /*display: flex;
+    align-items: center;
+    gap: 15px;*/
 }
 
 .logo-contenedor img{
     width: 100px;
     height: auto;
+    
+}
+
+.nav{
+    display: flex;
+    grid-area: nav;
 }
 
 .barra-nav{
@@ -94,8 +115,23 @@ footer{
 
 /* MAIN */
 
-.main-contenedor{
-    padding: 10px 20px 20px 20px;
+.main-grid{
+    /* padding: 10px 20px 20px 20px; */
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+    "seccion-bienvenidos"
+    "seccion-deportes"
+    "seccion-tablas";
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 3rem 1rem 3rem;
+    gap: 2rem;
+}
+
+.seccion-bienvenidos{
+    grid-area: seccion-bienvenidos;
 }
 
 .seccion-bienvenidos img{
@@ -107,11 +143,35 @@ footer{
     display: flex;
     gap: 10px;
     justify-content: space-around;
+    grid-area: seccion-deportes;
 }
 
 .seccion-tablas img{
     width: 100%;
     height: auto;
+}
+
+.seccion-tablas{
+    grid-area: seccion-tablas;
+}
+
+.lancha-park-grid{
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "w-lancha w-park";
+    gap: 5rem;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.w-lancha{
+    grid-area: w-lancha;
+}
+
+.w-park{
+    grid-area: w-park;
 }
 
 /* FOOTER */
@@ -169,3 +229,27 @@ footer{
     margin-top: 20px;
     justify-content: space-between;
 }
+
+/* MEDIA QUERYS */
+
+/* @media(max-width: 768px){
+    .header-grid{
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(1, auto);
+        grid-template-areas: 
+        "logo-contenedor"
+        "nav";
+        justify-items: center;
+    }
+}
+
+@media(max-width: 320px){
+    .header-grid{
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(1, auto);
+        grid-template-areas: 
+        "logo-contenedor"
+        "nav";
+        justify-items: center;
+    }
+} */
