@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FUENTES
+font-family: 'Poppins', sans-serif; 
+font-family: 'Golos Text', sans-serif;
+*/
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    color: white;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: black;
+}
+
+h3{
+    font-family: 'Golos Text', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    color: #585353;
+}
+
+h5{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+p{
+    font-family: 'Golos Text', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #52524E;
+}
+
+footer{
+    background-color: black;
+}
+
+/* HEADER*/
+.header-contenedor{
+    padding: 20px 20px 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-contenedor{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-contenedor img{
+    width: 100px;
+    height: auto;
+}
+
+.barra-nav{
+    display: flex;
+    gap: 30px;
+}
+
+.barra-nav li{
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+}
+
+.barra-nav li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* MAIN */
+
+.main-contenedor{
+    padding: 10px 20px 20px 20px;
+}
+
+.seccion-bienvenidos img{
+    width: 100%;
+    height: auto;
+}
+
+.seccion-deportes{
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.seccion-tablas img{
+    width: 100%;
+    height: auto;
+}
+
+/* FOOTER */
+
+.footer-contenedor{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.logos-sociales{
+    display: flex;
+    gap: 5px;
+}
+
+.formulario{
+    display: flex;
+    gap: 5px;
+}
+
+/*LANCHA Y PARK */
+
+.seccion-lp img{
+    width: 100%;
+    height: auto;
+}
+
+.articulo-lp{
+    background-color: #c9c8c8;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.imagen-texto{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.imagenes-tablas img{
+    width: 100%;
+    height: auto;
+}
+
+.seccion-local img{
+    width: 100%;
+    height: auto;
+}
+
+.seccion-contactos{
+    display: flex;
+    background-color: #c9c8c8;
+    padding: 20px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
