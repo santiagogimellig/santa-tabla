@@ -1,0 +1,37 @@
+.footer-grid{
+    background-color: black;
+    @include grid (repeat(1, 1fr), repeat (3, 1fr), "columna1-footer columna2-footer columna3-footer", none, space-between);
+    padding: 2rem 3rem 2rem 3rem;
+    gap: 2rem;
+    .columna1-footer{
+        margin: 0.7rem;
+        margin-top: 0rem;
+        .logo-contenedor{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            a{
+                img{
+                    width: 6rem;
+                    height: auto;
+                }
+                h1{
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 2.3rem;
+                    color: white;
+                }
+            }
+        }
+        div{
+            div{
+                img{
+                    width: 4rem;
+                }
+            }
+        }
+    }
+    .columna3-footer{
+        margin: 1rem;
+        margin-top: 0rem;
+    }
+}

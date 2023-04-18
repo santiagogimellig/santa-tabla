@@ -1,0 +1,127 @@
+@media(max-width: 1024px){
+    .header-grid{
+        @include grid (repeat(1, 1fr), repeat(2, 1fr), "logo-contenedor nav", center, space-between);
+        .logo-contenedor{
+            a{
+                h1{
+                    font-size: 1.8rem;
+                }
+                img{
+                    width: 5rem;
+                }
+            }
+        }
+        .nav{
+            .barra-nav{
+                li{
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+    .main-grid{
+        h2{
+            font-size: 1.7rem;
+        }
+        h3{
+            font-size: 1.6rem;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+        .seccion-bienvenidos{
+            width: 58rem;
+            height: auto;
+        }
+        .seccion-deportes{
+            .lancha-park-grid{
+                .w-lancha{
+                    a{
+                        img{
+                            width: 28rem;
+                        }
+                    }
+                }
+                .w-park{
+                    a{
+                        img{
+                            width: 28rem;
+                        }
+                    }
+                }
+            }
+        }
+        .seccion-tablas{
+            a{
+                img{
+                    width: 58rem;
+                }
+            }
+        }
+        .seccion-lp{
+        }
+        .articulo-lp{
+            .imagen-texto{
+                gap: 3rem;
+                .imagen{
+                    margin-left: 5rem;
+                }
+            }
+        }
+        .imagenes-tablas{
+            img{
+                width: 58rem;
+            }
+        }
+    }
+    .main-contenedor{
+        .seccion-local{
+            img{
+                width: 58rem;
+            }
+        }
+        .seccion-contactos{
+            .columna2{
+                .img1-contactos-col2{
+                    display: flex;
+                    margin: 0.5rem;
+                }
+                .img2-contactos-col2{
+                    display: flex;
+                    margin: 0.5rem;
+                }
+                img{
+                    width: 18rem;
+                }
+            }
+        }
+    }
+    .footer-grid{
+        h4{
+            font-size: 1.5rem;
+        }
+        h5{
+            font-size: 1.5rem;
+        }
+        .columna1-footer{
+            .logo-contenedor{
+                a{
+                    img{
+                        width: 5rem;
+                    }
+                    h1{
+                        font-size: 2rem;
+                    }
+                }
+            }
+            div{
+                .logos-sociales{
+                    display: flex;
+                    img{
+                        width: 3.6rem;
+                    }
+                }
+            }
+        }
+    }
+}

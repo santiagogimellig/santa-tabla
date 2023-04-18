@@ -1,0 +1,18 @@
+.main-grid{
+    .seccion-lp{
+        width: 100%;
+    }
+    .articulo-lp{
+        background-color: #c9c8c8;
+        padding: 2rem;
+        margin-top: 2rem;
+        .imagen-texto{
+            display: flex;
+            align-items: center;
+            gap: 15rem;
+            .imagen{
+                margin-left: 5rem;
+            }
+        }
+    }
+}

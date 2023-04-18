@@ -1,0 +1,11 @@
+{
+  "name": "proyecto-final",
+  "version": "1.0.0",
+  "description": "SANTA TABLA es un sitio web el cual fue diseñado para conocer sobre el wakeboard. \r En el podemos encontrar, informacion sobre el wakeboard lancha, sobre el wakeaboard park y tambien imagenes de las diferentes tablas que se pueden utilizar par realizar los deportes.\r Tambien encontramos informacion sobre dos campeones mundiales de los deportes anteriormnete nombrados.\r Las herramientas utilizadas para crear ete sitio fueron: HTML5, CSS y BOOTSTRAP.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

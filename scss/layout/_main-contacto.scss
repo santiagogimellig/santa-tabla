@@ -1,0 +1,23 @@
+.main-contenedor{
+    justify-items: center;
+    margin: 2rem 3rem 1rem 3rem;
+    gap: 2rem;
+    text-align: center;
+    .seccion-local{
+        img{
+            width: 89rem;
+        }
+    }
+    .seccion-contactos{
+        margin-top: 1.5rem;
+        background-color: #c9c8c8;
+        display: flex;
+        .columna1{
+            margin: 1rem;
+            text-align: left;
+        }
+        .columna2{
+            margin: 1rem;
+        }
+    }
+}

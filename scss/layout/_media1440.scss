@@ -1,0 +1,77 @@
+@media(max-width: 1440px){
+    .header-grid{
+        @include grid (repeat(1, 1fr), repeat(2, 1fr), "logo-contenedor nav", center, space-between);
+        .logo-contenedor{
+            a{
+                img{
+                    width: 6rem;
+                }
+                h1{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+        .nav{
+            .barra-nav{
+                li{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    .main-grid{
+        .seccion-bienvenidos{
+            width: 84rem;
+            height: auto;
+        }
+        .seccion-deportes{
+            .lancha-park-grid{
+                .w-lancha{
+                    a{
+                        img{
+                            width: 41rem;
+                        }
+                    }
+                }
+                .w-park{
+                    a{
+                        img{
+                            width: 41rem;
+                        }
+                    }
+                }
+            }
+        }
+        .seccion-tablas{
+            a{
+                img{
+                    width: 84rem;
+                }
+            }
+        }
+        .imagenes-tablas{
+            img{
+                width: 84rem;
+            }
+        }
+    }
+    .main-contenedor{
+        .seccion-local{
+            img{
+                width: 84rem;
+            }
+        }
+        .seccion-contactos{
+            .columna2{
+                .img1-contactos-col2{
+                    display: flex;
+                    margin: 0.5rem;
+                }
+                .img2-contactos-col2{
+                    display: flex;
+                    margin: 0.5rem;
+                }
+            }
+        }
+    }
+}

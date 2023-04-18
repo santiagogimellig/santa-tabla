@@ -1,0 +1,142 @@
+@media(max-width: 768px){
+    .header-grid{
+        @include grid (repeat(2, auto), repeat(1, 1fr), "logo-contenedor" "nav", center, space-between);
+        .logo-contenedor{
+            justify-content: center;
+            a{
+                img{
+                    width: 5rem;
+                }
+                h1{
+                    font-size: 2rem;
+                }
+            }
+        }
+        .nav{
+            .barra-nav{
+                padding-left: 2.5rem;
+                li{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+    
+    .main-grid{
+        h2{
+            font-size: 1.5rem;
+        }
+        h3{
+            font-size: 1.3rem;
+        }
+        p{
+            font-size: 1.1rem;
+        }
+        .seccion-bienvenidos{
+            width: 41rem;
+        }
+        .seccion-deportes{
+            .lancha-park-grid{
+                flex-direction: column;
+                .w-lancha{
+                    a{
+                        img{
+                            width: 41rem;
+                            height: 15rem;
+                        }
+                    }
+                }
+                .w-park{
+                    a{
+                        img{
+                            width: 41rem;
+                            height: 15rem;
+                        }
+                    }
+                }
+            }
+        }
+        .seccion-tablas{
+            a{
+                img{
+                    width: 41rem;
+                }
+            }
+        }
+        .articulo-lp{
+            .imagen-texto{
+                gap: 3rem;
+                .imagen{
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+        .imagenes-tablas{
+            img{
+                width: 41rem;
+            }
+        }
+    }
+    .main-contenedor{
+        p{
+            font-size: 1.1rem;
+        }
+        .seccion-local{
+            img{
+                width: 41rem;
+            }
+        }
+        .seccion-contactos{
+            .columna2{
+                margin: 0.5rem;
+                .img1-contactos-col2{
+                    flex-direction: column;
+                }
+                .img2-contactos-col2{
+                    flex-direction: column;
+                }
+                img{
+                    margin: 0.5rem;
+                    width: 10rem;
+                }
+            }
+        }
+    }
+    .footer-grid{
+        h4{
+            font-size: 1.4rem;
+        }
+        h5{
+            font-size: 1.4rem;
+        }
+        .columna1-footer{
+            .logo-contenedor{
+                a{
+                    img{
+                        width: 4.5rem;
+                    }
+                    h1{
+                        font-size: 1.7rem;
+                    }
+                }
+            }
+            div{
+                .logos-sociales{
+                    display: flex;
+                    img{
+                        width: 3rem;
+                    }
+                }
+            }
+        }
+        .columna3-footer{
+            div{
+                .formulario{
+                    input{
+                        width: 8.2rem;
+                    }
+                }
+            }
+        }
+    }
+}

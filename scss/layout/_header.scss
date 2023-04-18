@@ -1,0 +1,36 @@
+.header-grid{
+    margin: 2rem 3rem 1rem 3rem;
+    gap: 2rem;
+    @include grid (repeat(1, 1fr), repeat(2, 1fr), "logo-contenedor nav", center, space-between);
+    .logo-contenedor{
+        display: flex;
+        grid-area: logo-contenedor;
+        align-items: center;
+        gap: 1rem;
+        a{
+            img{
+                width: 7rem;
+                height: auto;
+            }
+            h1{
+                font-size: 2.7rem;
+            }
+        }
+    }
+    .nav{
+        display: flex;
+        grid-area: nav;
+        .barra-nav{
+            display: flex;
+            gap: 2.5rem;
+            li{
+                list-style: none;
+                font-family: 'Poppins', sans-serif;
+                font-size: 2rem;
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+}

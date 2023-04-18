@@ -1,0 +1,42 @@
+.main-grid{
+    // padding: 10px 20px 20px 20px;
+    @include grid (repeat(3, auto), repeat(1, 1fr), "seccion-bienvenidos" "seccion-deportes" "seccion-tablas", center, space-between);
+    justify-items: center;
+    margin: 2rem 3rem 1rem 3rem;
+    gap: 2rem;
+    text-align: center;
+    .seccion-bienvenidos{
+        width: 100%;
+    }
+    .seccion-deportes{
+        width: 100%;
+        .lancha-park-grid{
+            display: flex;
+            gap: 1rem;
+            justify-content: space-around;
+            grid-area: seccion-deportes;
+            
+            .w-lancha{
+                a{
+                    img{
+                        width: 43.3rem;
+                    }
+                }
+            }
+            .w-park{
+                a{
+                    img{
+                        width: 43.3rem;
+                    }
+                }
+            }
+        }
+    }
+    .seccion-tablas{
+        a{
+            img{
+                width: 88rem;
+            }
+        }
+    }
+}
