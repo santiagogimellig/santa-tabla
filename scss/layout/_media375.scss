@@ -1,38 +1,41 @@
-@media(max-width:375px){
+@media (min-width: 321px) and (max-width:375px){
     .header-grid{
         @include grid (repeat(2, auto), repeat(1, 1fr), "logo-contenedor" "nav", center, space-between);
+        margin-left: 7px;
+        align-items: center;
         .logo-contenedor{
             justify-content: center;
             a{
                 img{
-                    width: 10rem;
+                    width: 5rem;
                 }
                 h1{
-                    font-size: 2rem;
+                    font-size: 1.8rem;
                 }
             }
         }
         .nav{
             .barra-nav{
-                padding-left: 2.5rem;
                 li{
-                    font-size: 1.6rem;
+                    width: 20px;
+                    font-size: 0.8rem;
                 }
             }
         }
     }
     .main-grid{
+        margin-top: 10px;
         h2{
-            font-size: 1.5rem;
+            font-size: 1rem;
         }
         h3{
-            font-size: 1.3rem;
+            font-size: 1rem;
         }
         p{
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
         .seccion-bienvenidos{
-            width: 40rem;
+            width: 18.8rem;
         }
         .seccion-deportes{
             .lancha-park-grid{
@@ -40,16 +43,16 @@
                 .w-lancha{
                     a{
                         img{
-                            width: 41rem;
-                            height: 15rem;
+                            width: 18.8rem;
+                            height: 7rem;
                         }
                     }
                 }
                 .w-park{
                     a{
                         img{
-                            width: 41rem;
-                            height: 15rem;
+                            width: 18.8rem;
+                            height: 7rem;
                         }
                     }
                 }
@@ -58,7 +61,7 @@
         .seccion-tablas{
             a{
                 img{
-                    width: 41rem;
+                    width: 18.8rem;
                 }
             }
         }
@@ -102,20 +105,25 @@
         }
     }
     .footer-grid{
+        width: 375px;
+        padding-left: 36px;
         h4{
-            font-size: 1.4rem;
+            font-size: 1rem;
         }
         h5{
-            font-size: 1.4rem;
+            font-size: 1rem;
         }
+        @include grid (repeat(3, auto), repeat(1, 1fr), "columna1-footer" "columna2-footer" "columna2-footer", center, space-between);
         .columna1-footer{
+            margin: 0px;
             .logo-contenedor{
+                justify-content: center;
                 a{
                     img{
-                        width: 4.5rem;
+                        width: 4.3rem;
                     }
                     h1{
-                        font-size: 1.7rem;
+                        font-size: 1.5rem;
                     }
                 }
             }
@@ -123,16 +131,22 @@
                 .logos-sociales{
                     display: flex;
                     img{
-                        width: 3rem;
+                        width: 2rem;
                     }
                 }
             }
         }
         .columna3-footer{
+            margin: 0px;
             div{
                 .formulario{
+                    display: flex;
                     input{
-                        width: 8.2rem;
+                        width: 8rem;
+                        margin-right: 10px;
+                    }
+                    button{
+                        width: 5rem;
                     }
                 }
             }
