@@ -1,11 +1,11 @@
-@media(max-width: 375px){
+@media(max-width:375px){
     .header-grid{
         @include grid (repeat(2, auto), repeat(1, 1fr), "logo-contenedor" "nav", center, space-between);
         .logo-contenedor{
             justify-content: center;
             a{
                 img{
-                    width: 5rem;
+                    width: 10rem;
                 }
                 h1{
                     font-size: 2rem;
@@ -21,7 +21,6 @@
             }
         }
     }
-    
     .main-grid{
         h2{
             font-size: 1.5rem;
@@ -33,7 +32,7 @@
             font-size: 1.1rem;
         }
         .seccion-bienvenidos{
-            width: 10rem;
+            width: 40rem;
         }
         .seccion-deportes{
             .lancha-park-grid{

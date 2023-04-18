@@ -177,6 +177,14 @@ p {
   margin-left: 5rem;
 }
 
+.main-grid {
+  display: grid;
+  grid-template-rows: repeat(1, auto);
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas: "imagenes-tablas";
+  align-items: center;
+  justify-content: space-between;
+}
 .main-grid .imagenes-tablas img {
   width: 89rem;
 }
@@ -444,7 +452,7 @@ p {
     justify-content: center;
   }
   .header-grid .logo-contenedor a img {
-    width: 100rem;
+    width: 10rem;
   }
   .header-grid .logo-contenedor a h1 {
     font-size: 2rem;
@@ -465,107 +473,7 @@ p {
     font-size: 1.1rem;
   }
   .main-grid .seccion-bienvenidos {
-    width: 20rem;
-  }
-  .main-grid .seccion-deportes .lancha-park-grid {
-    flex-direction: column;
-  }
-  .main-grid .seccion-deportes .lancha-park-grid .w-lancha a img {
-    width: 1px;
-    height: 15rem;
-  }
-  .main-grid .seccion-deportes .lancha-park-grid .w-park a img {
-    width: 4rem;
-    height: 15rem;
-  }
-  .main-grid .seccion-tablas a img {
-    width: 1rem;
-  }
-  .main-grid .articulo-lp .imagen-texto {
-    gap: 3rem;
-  }
-  .main-grid .articulo-lp .imagen-texto .imagen {
-    margin-left: 0.5rem;
-  }
-  .main-grid .imagenes-tablas img {
-    width: 41rem;
-  }
-  .main-contenedor p {
-    font-size: 1.1rem;
-  }
-  .main-contenedor .seccion-local img {
-    width: 41rem;
-  }
-  .main-contenedor .seccion-contactos .columna2 {
-    margin: 0.5rem;
-  }
-  .main-contenedor .seccion-contactos .columna2 .img1-contactos-col2 {
-    flex-direction: column;
-  }
-  .main-contenedor .seccion-contactos .columna2 .img2-contactos-col2 {
-    flex-direction: column;
-  }
-  .main-contenedor .seccion-contactos .columna2 img {
-    margin: 0.5rem;
-    width: 10rem;
-  }
-  .footer-grid h4 {
-    font-size: 1.4rem;
-  }
-  .footer-grid h5 {
-    font-size: 1.4rem;
-  }
-  .footer-grid .columna1-footer .logo-contenedor a img {
-    width: 4.5rem;
-  }
-  .footer-grid .columna1-footer .logo-contenedor a h1 {
-    font-size: 1.7rem;
-  }
-  .footer-grid .columna1-footer div .logos-sociales {
-    display: flex;
-  }
-  .footer-grid .columna1-footer div .logos-sociales img {
-    width: 3rem;
-  }
-  .footer-grid .columna3-footer div .formulario input {
-    width: 8.2rem;
-  }
-}
-@media (max-width: 375px) {
-  .header-grid {
-    display: grid;
-    grid-template-rows: repeat(2, auto);
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: "logo-contenedor" "nav";
-    align-items: center;
-    justify-content: space-between;
-  }
-  .header-grid .logo-contenedor {
-    justify-content: center;
-  }
-  .header-grid .logo-contenedor a img {
-    width: 5rem;
-  }
-  .header-grid .logo-contenedor a h1 {
-    font-size: 2rem;
-  }
-  .header-grid .nav .barra-nav {
-    padding-left: 2.5rem;
-  }
-  .header-grid .nav .barra-nav li {
-    font-size: 1.6rem;
-  }
-  .main-grid h2 {
-    font-size: 1.5rem;
-  }
-  .main-grid h3 {
-    font-size: 1.3rem;
-  }
-  .main-grid p {
-    font-size: 1.1rem;
-  }
-  .main-grid .seccion-bienvenidos {
-    width: 10rem;
+    width: 40rem;
   }
   .main-grid .seccion-deportes .lancha-park-grid {
     flex-direction: column;

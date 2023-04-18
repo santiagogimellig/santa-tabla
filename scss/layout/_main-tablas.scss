@@ -1,4 +1,5 @@
 .main-grid{
+    @include grid (repeat(1, auto), repeat(1, 1fr), "imagenes-tablas", center, space-between);
     .imagenes-tablas{
         img{
             width: 89rem;
