@@ -61,6 +61,21 @@
                 }
             }
         }
+        .seccion-lp{
+            width: 23rem;
+        }
+        .articulo-lp{
+            margin-top: 1px;
+            width: 23rem;
+            .imagen-texto{
+                gap: 3rem;
+                flex-direction: column;
+                .imagen{
+                    
+                    margin-left: 0.5rem;
+                }
+            }
+        }
         .seccion-tablas{
             a{
                 img{
@@ -68,30 +83,26 @@
                 }
             }
         }
-        .articulo-lp{
-            .imagen-texto{
-                gap: 3rem;
-                .imagen{
-                    margin-left: 0.5rem;
-                }
-            }
-        }
+        
         .imagenes-tablas{
+            margin-top: 20px;
             img{
-                width: 41rem;
+                width: 23rem;
             }
         }
     }
     .main-contenedor{
+        margin-left: 29px;
         p{
             font-size: 0.8rem;
         }
         .seccion-local{
             img{
-                width: 41rem;
+                width: 23rem;
             }
         }
         .seccion-contactos{
+            width: 23rem;
             .columna2{
                 margin: 0.5rem;
                 .img1-contactos-col2{

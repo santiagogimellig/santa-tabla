@@ -499,23 +499,40 @@ p {
     width: 22.5rem;
     height: 7rem;
   }
-  .main-grid .seccion-tablas a img {
-    width: 22.5rem;
+  .main-grid .seccion-lp {
+    width: 23rem;
+  }
+  .main-grid .articulo-lp {
+    margin-top: 1px;
+    width: 23rem;
   }
   .main-grid .articulo-lp .imagen-texto {
     gap: 3rem;
+    flex-direction: column;
   }
   .main-grid .articulo-lp .imagen-texto .imagen {
     margin-left: 0.5rem;
   }
+  .main-grid .seccion-tablas a img {
+    width: 22.5rem;
+  }
+  .main-grid .imagenes-tablas {
+    margin-top: 20px;
+  }
   .main-grid .imagenes-tablas img {
-    width: 41rem;
+    width: 23rem;
+  }
+  .main-contenedor {
+    margin-left: 29px;
   }
   .main-contenedor p {
     font-size: 0.8rem;
   }
   .main-contenedor .seccion-local img {
-    width: 41rem;
+    width: 23rem;
+  }
+  .main-contenedor .seccion-contactos {
+    width: 23rem;
   }
   .main-contenedor .seccion-contactos .columna2 {
     margin: 0.5rem;
@@ -577,7 +594,7 @@ p {
     width: 5rem;
   }
 }
-@media (min-width: 321px) and (max-width: 375px) {
+@media (min-width: 321px) and (max-width: 376px) {
   .header-grid {
     display: grid;
     grid-template-rows: repeat(2, auto);
@@ -585,65 +602,93 @@ p {
     grid-template-areas: "logo-contenedor" "nav";
     align-items: center;
     justify-content: space-between;
-    margin-left: 7px;
+    margin: 0px;
+    margin-top: 32px;
     align-items: center;
   }
   .header-grid .logo-contenedor {
     justify-content: center;
   }
   .header-grid .logo-contenedor a img {
-    width: 5rem;
+    width: 4rem;
   }
   .header-grid .logo-contenedor a h1 {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
+  }
+  .header-grid .nav {
+    justify-content: center;
+  }
+  .header-grid .nav .barra-nav {
+    padding: 0px;
+    justify-content: space-between;
   }
   .header-grid .nav .barra-nav li {
-    width: 20px;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
   .main-grid {
-    margin-top: 10px;
+    margin: 10px 0px;
   }
   .main-grid h2 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .main-grid h3 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .main-grid p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .main-grid .seccion-bienvenidos {
-    width: 18.8rem;
+    width: 20.3rem;
   }
   .main-grid .seccion-deportes .lancha-park-grid {
     flex-direction: column;
   }
   .main-grid .seccion-deportes .lancha-park-grid .w-lancha a img {
-    width: 18.8rem;
+    width: 20.3rem;
     height: 7rem;
   }
   .main-grid .seccion-deportes .lancha-park-grid .w-park a img {
-    width: 18.8rem;
+    width: 20.3rem;
     height: 7rem;
   }
   .main-grid .seccion-tablas a img {
-    width: 18.8rem;
+    width: 20.3rem;
+  }
+  .main-grid .seccion-lp {
+    width: 20rem;
+  }
+  .main-grid .articulo-lp {
+    margin-top: 1px;
+    width: 20rem;
   }
   .main-grid .articulo-lp .imagen-texto {
     gap: 3rem;
+    flex-direction: column;
   }
   .main-grid .articulo-lp .imagen-texto .imagen {
     margin-left: 0.5rem;
   }
+  .main-grid .articulo-lp .imagen-texto .imagen img {
+    width: 10rem;
+  }
+  .main-grid .imagenes-tablas {
+    margin-top: 20px;
+  }
   .main-grid .imagenes-tablas img {
-    width: 41rem;
+    width: 20rem;
+  }
+  .main-contenedor {
+    margin-left: 29px;
   }
   .main-contenedor p {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
   }
   .main-contenedor .seccion-local img {
-    width: 41rem;
+    width: 20rem;
+  }
+  .main-contenedor .seccion-contactos {
+    flex-direction: column;
+    width: 20rem;
   }
   .main-contenedor .seccion-contactos .columna2 {
     margin: 0.5rem;
@@ -659,7 +704,7 @@ p {
     width: 10rem;
   }
   .footer-grid {
-    width: 375px;
+    width: 376px;
     padding-left: 36px;
     display: grid;
     grid-template-rows: repeat(3, auto);
@@ -669,22 +714,19 @@ p {
     justify-content: space-between;
   }
   .footer-grid h4 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .footer-grid h5 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .footer-grid .columna1-footer {
     margin: 0px;
   }
-  .footer-grid .columna1-footer .logo-contenedor {
-    justify-content: center;
-  }
   .footer-grid .columna1-footer .logo-contenedor a img {
-    width: 4.3rem;
+    width: 4rem;
   }
   .footer-grid .columna1-footer .logo-contenedor a h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .footer-grid .columna1-footer div .logos-sociales {
     display: flex;
@@ -700,9 +742,164 @@ p {
   }
   .footer-grid .columna3-footer div .formulario input {
     width: 8rem;
+    height: 1.5rem;
     margin-right: 10px;
   }
   .footer-grid .columna3-footer div .formulario button {
+    height: 1.5rem;
+    width: 5rem;
+  }
+}
+@media (max-width: 321px) {
+  .header-grid {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "logo-contenedor" "nav";
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    margin-top: 32px;
+    align-items: center;
+  }
+  .header-grid .logo-contenedor {
+    justify-content: center;
+  }
+  .header-grid .logo-contenedor a img {
+    width: 4rem;
+  }
+  .header-grid .logo-contenedor a h1 {
+    font-size: 1.3rem;
+  }
+  .header-grid .nav {
+    justify-content: center;
+  }
+  .header-grid .nav .barra-nav {
+    padding: 0px;
+    justify-content: space-between;
+  }
+  .header-grid .nav .barra-nav li {
+    font-size: 0.39rem;
+  }
+  .main-grid {
+    margin: 10px 0px;
+  }
+  .main-grid h2 {
+    font-size: 0.8rem;
+  }
+  .main-grid h3 {
+    font-size: 0.8rem;
+  }
+  .main-grid p {
+    font-size: 0.8rem;
+  }
+  .main-grid .seccion-bienvenidos {
+    width: 16.3rem;
+  }
+  .main-grid .seccion-deportes .lancha-park-grid {
+    flex-direction: column;
+  }
+  .main-grid .seccion-deportes .lancha-park-grid .w-lancha a img {
+    width: 16.3rem;
+    height: 7rem;
+  }
+  .main-grid .seccion-deportes .lancha-park-grid .w-park a img {
+    width: 16.3rem;
+    height: 7rem;
+  }
+  .main-grid .seccion-tablas a img {
+    width: 16.3rem;
+  }
+  .main-grid .seccion-lp {
+    width: 16.3rem;
+  }
+  .main-grid .articulo-lp {
+    margin-top: 1px;
+    width: 16.3rem;
+  }
+  .main-grid .articulo-lp .imagen-texto {
+    gap: 3rem;
+    flex-direction: column;
+  }
+  .main-grid .articulo-lp .imagen-texto .imagen {
+    margin-left: 0.5rem;
+  }
+  .main-grid .articulo-lp .imagen-texto .imagen img {
+    width: 10rem;
+  }
+  .main-grid .imagenes-tablas img {
+    width: 16.3rem;
+  }
+  .main-contenedor {
+    margin-left: 29px;
+  }
+  .main-contenedor p {
+    font-size: 0.8rem;
+  }
+  .main-contenedor .seccion-local img {
+    width: 16.3rem;
+  }
+  .main-contenedor .seccion-contactos {
+    flex-direction: column;
+    width: 16.3rem;
+  }
+  .main-contenedor .seccion-contactos .columna2 {
+    margin: 0.5rem;
+  }
+  .main-contenedor .seccion-contactos .columna2 .img1-contactos-col2 {
+    flex-direction: column;
+  }
+  .main-contenedor .seccion-contactos .columna2 .img2-contactos-col2 {
+    flex-direction: column;
+  }
+  .main-contenedor .seccion-contactos .columna2 img {
+    margin: 0.5rem;
+    width: 10rem;
+  }
+  .footer-grid {
+    width: 321px;
+    padding-left: 36px;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "columna1-footer" "columna2-footer" "columna2-footer";
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer-grid h4 {
+    font-size: 0.8rem;
+  }
+  .footer-grid h5 {
+    font-size: 0.8rem;
+  }
+  .footer-grid .columna1-footer {
+    margin: 0px;
+  }
+  .footer-grid .columna1-footer .logo-contenedor a img {
+    width: 4rem;
+  }
+  .footer-grid .columna1-footer .logo-contenedor a h1 {
+    font-size: 1.3rem;
+  }
+  .footer-grid .columna1-footer div .logos-sociales {
+    display: flex;
+  }
+  .footer-grid .columna1-footer div .logos-sociales img {
+    width: 2rem;
+  }
+  .footer-grid .columna3-footer {
+    margin: 0px;
+  }
+  .footer-grid .columna3-footer div .formulario {
+    display: flex;
+  }
+  .footer-grid .columna3-footer div .formulario input {
+    width: 8rem;
+    height: 1.5rem;
+    margin-right: 10px;
+  }
+  .footer-grid .columna3-footer div .formulario button {
+    height: 1.5rem;
     width: 5rem;
   }
 }
