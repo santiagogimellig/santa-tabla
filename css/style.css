@@ -442,7 +442,7 @@ p {
     margin-top: 5px;
   }
 }
-@media (min-width: 376px) and (max-width: 425px) {
+@media (min-width: 376px) and (max-width: 426px) {
   .header-grid {
     display: grid;
     grid-template-rows: repeat(2, auto);
@@ -450,6 +450,9 @@ p {
     grid-template-areas: "logo-contenedor" "nav";
     align-items: center;
     justify-content: space-between;
+    margin: 0px;
+    margin-top: 32px;
+    align-items: center;
   }
   .header-grid .logo-contenedor {
     justify-content: center;
@@ -458,39 +461,46 @@ p {
     width: 5rem;
   }
   .header-grid .logo-contenedor a h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+  .header-grid .nav {
+    justify-content: center;
   }
   .header-grid .nav .barra-nav {
-    padding-left: 2.5rem;
+    padding: 0px;
+    justify-content: space-between;
   }
   .header-grid .nav .barra-nav li {
-    font-size: 1.6rem;
+    font-size: 0.75rem;
+  }
+  .main-grid {
+    margin: 10px 0px;
   }
   .main-grid h2 {
-    font-size: 1.5rem;
+    font-size: 0.8rem;
   }
   .main-grid h3 {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
   }
   .main-grid p {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
   }
   .main-grid .seccion-bienvenidos {
-    width: 41rem;
+    width: 22.5rem;
   }
   .main-grid .seccion-deportes .lancha-park-grid {
     flex-direction: column;
   }
   .main-grid .seccion-deportes .lancha-park-grid .w-lancha a img {
-    width: 41rem;
-    height: 15rem;
+    width: 22.5rem;
+    height: 7rem;
   }
   .main-grid .seccion-deportes .lancha-park-grid .w-park a img {
-    width: 41rem;
-    height: 15rem;
+    width: 22.5rem;
+    height: 7rem;
   }
   .main-grid .seccion-tablas a img {
-    width: 41rem;
+    width: 22.5rem;
   }
   .main-grid .articulo-lp .imagen-texto {
     gap: 3rem;
@@ -502,7 +512,7 @@ p {
     width: 41rem;
   }
   .main-contenedor p {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
   }
   .main-contenedor .seccion-local img {
     width: 41rem;
@@ -520,26 +530,51 @@ p {
     margin: 0.5rem;
     width: 10rem;
   }
+  .footer-grid {
+    width: 426px;
+    padding-left: 36px;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "columna1-footer" "columna2-footer" "columna2-footer";
+    align-items: center;
+    justify-content: space-between;
+  }
   .footer-grid h4 {
-    font-size: 1.4rem;
+    font-size: 0.8rem;
   }
   .footer-grid h5 {
-    font-size: 1.4rem;
+    font-size: 0.8rem;
+  }
+  .footer-grid .columna1-footer {
+    margin: 0px;
   }
   .footer-grid .columna1-footer .logo-contenedor a img {
-    width: 4.5rem;
+    width: 4.3rem;
   }
   .footer-grid .columna1-footer .logo-contenedor a h1 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
   .footer-grid .columna1-footer div .logos-sociales {
     display: flex;
   }
   .footer-grid .columna1-footer div .logos-sociales img {
-    width: 3rem;
+    width: 2rem;
+  }
+  .footer-grid .columna3-footer {
+    margin: 0px;
+  }
+  .footer-grid .columna3-footer div .formulario {
+    display: flex;
   }
   .footer-grid .columna3-footer div .formulario input {
-    width: 8.2rem;
+    width: 8rem;
+    height: 1.5rem;
+    margin-right: 10px;
+  }
+  .footer-grid .columna3-footer div .formulario button {
+    height: 1.5rem;
+    width: 5rem;
   }
 }
 @media (min-width: 321px) and (max-width: 375px) {
