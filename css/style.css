@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -87,6 +88,10 @@ p {
 }
 .header-grid .nav .barra-nav li a {
   color: white;
+}
+li:hover{
+  color: white;
+  text-decoration: underline;
 }
 
 .main-grid {
@@ -358,9 +363,10 @@ p {
     font-size: 2rem;
   }
   .header-grid .nav .barra-nav {
-    padding-left: 2.5rem;
+    padding-left: 10px;
   }
   .header-grid .nav .barra-nav li {
+    width: 5.8rem;
     font-size: 1.6rem;
   }
   .main-grid h2 {
@@ -705,7 +711,7 @@ p {
   }
   .footer-grid {
     width: 376px;
-    padding-left: 36px;
+    padding-left: 27px;
     display: grid;
     grid-template-rows: repeat(3, auto);
     grid-template-columns: repeat(1, 1fr);
@@ -858,7 +864,7 @@ p {
   }
   .footer-grid {
     width: 321px;
-    padding-left: 36px;
+    padding-left: 31px;
     display: grid;
     grid-template-rows: repeat(3, auto);
     grid-template-columns: repeat(1, 1fr);
