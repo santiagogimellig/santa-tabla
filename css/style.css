@@ -824,10 +824,11 @@ p {
   }
   .header-grid .nav .barra-nav {
     padding: 0px;
+    padding-right: 10px;
     justify-content: space-between;
   }
   .header-grid .nav .barra-nav li {
-    font-size: 0.39rem;
+    font-size: 0.3rem;
   }
   .main-grid {
     margin-left: 25px;
