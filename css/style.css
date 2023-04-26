@@ -479,8 +479,22 @@ p {
   }
 }
 @media (min-width: 426px) and (max-width: 560px) {
+  .header-grid {
+    justify-content: center;
+  }
   .header-grid .nav .barra-nav li {
     font-size: 0.75rem;
+  }
+  .main-grid .seccion-deportes .lancha-park-grid {
+    flex-direction: column;
+  }
+  .main-grid .seccion-deportes .lancha-park-grid .w-lancha a img {
+    width: 100%;
+    height: 10rem;
+  }
+  .main-grid .seccion-deportes .lancha-park-grid .w-park a img {
+    width: 100%;
+    height: 10rem;
   }
   .footer-grid {
     display: grid;
