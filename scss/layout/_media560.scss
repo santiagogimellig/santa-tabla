@@ -1,0 +1,17 @@
+@media (min-width:426px) and (max-width:560px){
+    .header-grid{
+        .nav{
+            .barra-nav{
+                li{
+                    font-size: 0.75rem;
+                }
+            }
+        }
+    }
+    .footer-grid{
+        @include grid (repeat(3, auto), repeat(1, 1fr), "columna1-footer" "columna2-footer" "columna2-footer", center, space-between);
+        .columna3-footer{
+            margin: 0px;
+        }
+    }
+}

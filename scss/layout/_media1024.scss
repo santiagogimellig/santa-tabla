@@ -1,7 +1,8 @@
 @media (min-width: 769px) and (max-width: 1024px){
     .header-grid{
-        @include grid (repeat(1, 1fr), repeat(2, 1fr), "logo-contenedor nav", center, space-between);
+        @include grid (repeat(2, auto), repeat(1, 1fr), "logo-contenedor" "nav", center, space-between);
         .logo-contenedor{
+            justify-content: center;
             a{
                 h1{
                     font-size: 1.8rem;
@@ -12,7 +13,10 @@
             }
         }
         .nav{
+            width: 100%;
             .barra-nav{
+                justify-content: center;
+                width: 100%;
                 li{
                     font-size: 1.8rem;
                 }
@@ -30,7 +34,8 @@
             font-size: 1.2rem;
         }
         .seccion-bienvenidos{
-            width: 58rem;
+            width: 100%;
+
             height: auto;
         }
         .seccion-deportes{
@@ -38,14 +43,14 @@
                 .w-lancha{
                     a{
                         img{
-                            width: 28rem;
+                            width: 100%;
                         }
                     }
                 }
                 .w-park{
                     a{
                         img{
-                            width: 28rem;
+                            width: 100%;
                         }
                     }
                 }
@@ -54,11 +59,9 @@
         .seccion-tablas{
             a{
                 img{
-                    width: 58rem;
+                    width: 100%;
                 }
             }
-        }
-        .seccion-lp{
         }
         .articulo-lp{
             .imagen-texto{
@@ -70,24 +73,22 @@
         }
         .imagenes-tablas{
             img{
-                width: 58rem;
+                width: 100%;
             }
         }
     }
     .main-contenedor{
         .seccion-local{
             img{
-                width: 58rem;
+                width: 100%;
             }
         }
         .seccion-contactos{
             .columna2{
                 .img1-contactos-col2{
-                    display: flex;
                     margin: 0.5rem;
                 }
                 .img2-contactos-col2{
-                    display: flex;
                     margin: 0.5rem;
                 }
                 img{
@@ -97,6 +98,7 @@
         }
     }
     .footer-grid{
+        width: 100%;
         h4{
             font-size: 1.5rem;
         }
@@ -119,6 +121,15 @@
                     display: flex;
                     img{
                         width: 3.6rem;
+                    }
+                }
+            }
+        }
+        .columna3-footer{
+            div{
+                .formulario{
+                    input{
+                        width: 8rem;
                     }
                 }
             }
